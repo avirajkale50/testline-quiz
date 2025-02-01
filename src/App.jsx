@@ -20,7 +20,7 @@ function App() {
 
   const fetchQuizData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/data");
+      const response = await fetch("https://testline-quiz-backend.onrender.com/api/data");
       const data = await response.json();
       setQuizData(data);
       setLoading(false);
